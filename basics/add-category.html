@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="add-category.css" />
+    <!--ICON LINK-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!--FONT LINK-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/museumlogo.png" alt="">
+            </div>
+
+            <span class="logo_name">WEBSEUM</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="add-post.html">
+                    <i class="uil uil-pen"></i>
+                    <span class="link-name">Add Post</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-clipboard-notes"></i>
+                    <span class="link-name">Manage Posts</span>
+                </a></li>
+                <li><a href="add-user.html">
+                    <i class="uil uil-user-plus"></i>
+                    <span class="link-name">Add User</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Manage User</span>
+                </a></li>
+                <li><a href="add-category.html" class="active">
+                    <!-- <i class="uil uil-list-ol-alt"></i> -->
+                    <i class="uil uil-list-ui-alt"></i>
+                    <span class="link-name">Add Category</span>
+                </a></li>
+                <li><a href="manage-categories.html">
+                    <i class="uil uil-subject"></i>
+                    <span class="link-name">Manage Category</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <!-- <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-list-ui-alt"></i>
+                    <span class="text">Add Category</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__section">
+            <div class="container form__section-container">
+                <h2>Add Category</h2>
+                <div class="alert__message error">
+                    <p>This is an error message</p>
+                </div>
+                <form action="">
+                  <div class="inputBox">
+                    <input type="text" class="input-field" required="required" />
+                    <span>Category Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea rows="5" required="required"></textarea>
+                    <span>Description</span>
+                  </div>
+                <!-- <form action="">
+                    <input type="text" placeholder="Title" required>
+                   <textarea rows="4" placeholder="Description"></textarea> -->
+                    <button type="submit" class="btn">Add Category</button>
+                </form>
+            </div>
+          </div>
+    </section>
+
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+    </html>
+

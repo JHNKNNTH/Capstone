@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="add-user.css" />
+    <!--ICON LINK-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Document</title>
+    </head>
+    <body>
+
+        <section class="form__section">
+            <div class="container form__section-container">
+                <h2>Add User</h2>
+                <div class="alert__message error">
+                    <p>This is an error message</p>
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                      <input type="text" class="input-field" required="required" />
+                      <span>First Name</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="text" class="input-field" required="required" />
+                      <span>Last Name</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="text" class="input-field" required="required" />
+                      <span>Username</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="email" class="input-field" required="required" />
+                      <span>Email Address</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" class="input-field" required="required" />
+                      <span>Create Password</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" class="input-field" required="required" />
+                      <span>Confirm Password</span>
+                    </div>
+                    <div class="inputBox">
+                        <select required="required">
+                        <option value="0">User</option>
+                        <option value="1">Admin</option>
+                    </select>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                    <!-- <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Create Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <div class="form__control">
+                    <label for="avatar">User Avatar</label> 
+                    <input type="file" id="avatar" required>
+                    </div> -->
+                    <button type="submit" class="btn">Add User</button>
+                </form>
+            </div>
+        </section>
+
+    </body>
+    </html>
