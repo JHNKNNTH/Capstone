@@ -28,18 +28,19 @@ html {
     /* --first-color: #7374b4; */
     --first-color: #675cff;
     /* --body-color: #fff; */
-    --body-color: #ffffff;
     --color-gray: #e7e6ec;
     --color-black: #000;
     --color-white: #fff;
+    --color-red: #da0f3f;
     /* --text-color: #686868; */
-    --text-color: #555;
+    --text-color: #707070;
     --title-color: #464646;
     --nav-bg: #fefefe;
 
     --transition: all 300ms ease;
 
-    --container-width: 85%;
+    --container-width-md: 85%;
+    --container-width-sl: 90%;
 
     --card-border-radius-2: 0.5rem;
 }
@@ -48,12 +49,12 @@ html {
 body {
     line-height: 1.6;
     overflow-x: hidden;
-    background: var(--body-color);
+    background: var(--color-white);
 }
 
 .container {
-    width: var(--container-width);
-    max-width: 1800px;
+    width: var(--container-width-md);
+    /* max-width: 1800px; */
     margin-inline: auto;
 }
 
@@ -77,10 +78,30 @@ a {
     object-fit: cover;
 } */
 
+
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color);
+}
+
 /*==================== NAV ====================*/
 .new_nav {
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     width: 100%;
     height: 6.5rem;
     background: var(--nav-bg);
@@ -93,15 +114,16 @@ a {
 }
 
 .logo {
-    width:80px;
+    width: 80px;
     margin-top: 8px;
     margin-bottom: 10px;
 }
 
 .logo img {
     display: block;
-        width: 100%;
-        object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 nav .logo {
@@ -114,7 +136,7 @@ nav ul {
 
 nav ul li a {
     /* color: #212526; */
-    color: var(--color-black);
+    color: var(--text-color);
     display: block;
     margin: 0 2px;
     font-weight: 400;
@@ -122,10 +144,14 @@ nav ul li a {
     transition: 0.2s;
     text-transform: uppercase;
     font-size: 17px;
+    letter-spacing: 1px;
 }
 
- .logout:hover {
-    color: #ff0000;
+.logout:hover {
+    background-color: var(--color-red);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--color-white);
 }
 
 nav ul li a:hover {
@@ -196,14 +222,9 @@ nav ul li a.active {
         background: var(--color-gray);
     }
 
-    nav ul li a.active {
-        /* background: #e7e6ec; */
-        background: var(--color-gray);
-    }
-
     .logout:hover {
         color: #fff;
-        background:#ff0000;
+        background: var(--color-red);
     }
 
     nav ul {
@@ -228,13 +249,14 @@ nav ul li a.active {
     z-index: 10;
     position: relative;
     width: 100%;
-    min-height: 50vh;
+    /* min-height: 50vh; */
+    height: 100%;
 }
 
 .bg-slider .swiper-slide {
     position: relative;
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
 }
 
 .bg-slider .swiper-slide img {
@@ -268,24 +290,80 @@ nav ul li a.active {
 }
 
 /*==================== GENERAL POSTS ====================*/
-
 .post__thumbnail {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 25px;
-    /* max-height: 3797px;
-    max-width: 5695px; */
+    height: 350px;
+    cursor: pointer;
+
 }
 
 .post__thumbnail img {
     transition: all 0.5s;
-    width: 100%;
     object-fit: cover;
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .post__thumbnail img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+/*==================== POPUP-IMAGE ====================*/
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--color-white);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    display: block;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--first-color);
+}
+
+@media screen and (max-width: 768px) {
+    .popup-image img {
+        width: 95%;
+    }
+}
+
+/* @media screen and (max-width: 540px) {
+    .popup-image img {
+        height: 70%;
+        object-fit: cover;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    .popup-image img {
+        height: 50%;
+    }
 }
 
 /*==================== POSTS ====================*/
@@ -298,13 +376,13 @@ nav ul li a.active {
 .posts__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     gap: 60px;
 }
 
 .post__title a {
     color: var(--title-color);
-    font-weight: 600;
+    font-weight: 21px;
 }
 
 .post__body {
@@ -329,6 +407,20 @@ nav ul li a.active {
     gap: 16px;
 } */
 
+/*==================== BANNER ====================*/
+.banner {
+    width: 100%;
+    height: 100%;
+    padding: 400px 0 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/b4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 0 50px 0;
+}
+
+
 /*========== SCROLL UP ==========*/
 .scrollup {
     position: fixed;
@@ -341,6 +433,7 @@ nav ul li a.active {
     opacity: .9;
     z-index: 10;
     transition: .4s;
+    border-radius: 20%;
 }
 
 .scrollup__icon {
@@ -367,7 +460,7 @@ nav ul li a.active {
 
 @media screen and (max-width: 1024px) {
     .container {
-        width: var(--container-width);
+        width: var(--container-width-md);
     }
 
     .posts__container {
@@ -376,26 +469,26 @@ nav ul li a.active {
 }
 
 @media screen and (min-width: 1100px) {
-        .home {
-            height: 100vh;
-        }
-        
-        /*========== BACKGROUND SLIDER ==========*/
-        .bg-slider {
-             min-height: 100vh;
-        }
-        
-        .bg-slider .swiper-slide {
-            height: 100vh;
-        }
-        
-        .bg-slider .swiper-slide img {
-            height: 100vh;
-        }  
+    .home {
+        height: 100vh;
+    }
+
+    /*========== BACKGROUND SLIDER ==========*/
+    .bg-slider {
+        min-height: 100vh;
+    }
+
+    .bg-slider .swiper-slide {
+        height: 100vh;
+    }
+
+    .bg-slider .swiper-slide img {
+        height: 100vh;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .posts__container {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -406,12 +499,19 @@ nav ul li a.active {
     section {
         margin-top: 32px;
     }
+
+    .container {
+        width: var(--container-width-sl);
+    }
 }
 
 @media screen and (max-width: 425px) {
     .category__button {
         display: flex;
-        /*   */
+    }
+
+    .post__thumbnail {
+        height: 250px;
     }
 
     /* .post__body {

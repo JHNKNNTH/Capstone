@@ -4,62 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!----- REMIXICONS ----->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!----- REMIXICONS ----->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!----- CSS ----->
-      <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="home.css" />
     <!----- ICON LINK ----->
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <!----- IMAGE SLIDER LINK ----->
     <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="swiper-bundle.min.css">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <title>WEBSEUM</title>
   </head>
   <body>
-
     <!--==================== HEADER ====================-->
-        <header class="new_nav">
+    <header class="new_nav">
+      <div class="logo">
+        <img src="images/museumlogo.png" />
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
         <div class="logo">
-            <img src="images/museumlogo.png">
+          <img src="images/museumlogo.png" />
         </div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <div class="logo">
-                <img src="images/museumlogo.png">
-            </div>
-            <ul>
-                <li>
-                    <a href="" class="active">home</a>
-                </li>
-                <li>
-                    <a href="">about the museum</a>
-                </li>
-                <li>
-                    <a href="collections.html">collections</a>
-                </li>
-                <li>
-                    <a href="">exhibitions</a>
-                </li>
-                <li>
-                    <a href="">contact us</a>
-                </li>
-                <li>
-                    <a href=""  class="logout">log out</a>
-                </li>
-            </ul>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
+        <ul>
+          <li>
+            <a href="" class="active">home</a>
+          </li>
+          <li>
+            <a href="">about the museum</a>
+          </li>
+          <li>
+            <a href="collections.html">collections</a>
+          </li>
+          <li>
+            <a href="">exhibitions</a>
+          </li>
+          <li>
+            <a href="">contact us</a>
+          </li>
+          <li>
+            <a href="signin.html" class="logout">log out</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
     </header>
 
-
-
-         <!-- <header class="header" id="header">
+    <!-- <header class="header" id="header">
             <nav class="nav container__nav">
                 <a href="#" class="nav__logo">
                     <h3>LOGO</h3>
@@ -98,38 +102,205 @@
             </nav>
         </header> -->
 
-
-  <!--========== IMAGE CAROUSEL ==========-->
+    <!--========== IMAGE CAROUSEL ==========-->
 
     <div class="home">
-        <div class="swiper bg-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/museum1.jpg" alt="">
-            </div>
-            <div class="swiper-slide dark-layer">
-              <img src="images/museum2.jpg" alt="">
-            </div>
-            <div class="swiper-slide dark-layer">
-              <img src="images/museum3.jpg" alt="">
-            </div>
+      <div class="swiper bg-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/bg3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img src="images/b4.jpg" alt="" />
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img src="images/b5.jpg" alt="" />
           </div>
         </div>
       </div>
+    </div>
 
     <!--========== POSTS ==========-->
 
     <section class="posts">
       <div class="container posts__container">
         <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum.jpg" alt="images" />
+          <div class="image-container">
+            <div class="post__thumbnail">
+              <img src="images/1.jpg" alt="images" />
+            </div>
           </div>
           <div class="post__info">
-            <a href="category-posts.html" class="category__button">NEUST Memorabilla & Archive</a>
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
             <h3 class="post__title">
               <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eligendi!</a
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/2.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/3.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/4.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/4.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/11.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="post__thumbnail">
+            <img src="images/6.jpg" alt="images" />
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
+              >
+            </h3>
+            <p class="post__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
+              vero impedit laudantium ab, nam non minima architecto nihil
+              similique molestiae dolorum a!
+            </p>
+          </div>
+        </article>
+
+        <article class="post">
+          <div class="image">
+            <div class="post__thumbnail">
+              <img src="images/10.jpg" alt="images" />
+            </div>
+          </div>
+          <div class="post__info">
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
+            <h3 class="post__title">
+              <a href="post.html"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
               >
             </h3>
             <p class="post__body">
@@ -146,10 +317,13 @@
             <img src="images/museum.jpg" alt="images" />
           </div>
           <div class="post__info">
-            <a href="category-posts.html" class="category__button">History & Culture</a>
+            <a href="category-posts.html" class="category__button"
+              >NEUST Memorabilla & Archive</a
+            >
             <h3 class="post__title">
               <a href="post.html"
-                >Lorem ipsum dolor sit amet.</a
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                eligendi!</a
               >
             </h3>
             <p class="post__body">
@@ -160,156 +334,15 @@
             </p>
           </div>
         </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/tisting.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">Flora & Fauna</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum1.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">NEUST Memorabilla & Archive</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum2.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">History & Culture</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum3.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">Flora & Fauna</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">NEUST Memorabilla & Archive</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/museum.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">NEUST Memorabilla & Archive</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
-
-        
-        <article class="post">
-          <div class="post__thumbnail">
-            <img src="images/testing.jpg" alt="images" />
-          </div>
-          <div class="post__info">
-            <a href="category-posts.html" class="category__button">NEUST Memorabilla & Archive</a>
-            <h3 class="post__title">
-              <a href="post.html"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                nihil?</a
-              >
-            </h3>
-            <p class="post__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              iste sapiente, labore vitae suscipit adipisci debitis voluptatum
-              vero impedit laudantium ab, nam non minima architecto nihil
-              similique molestiae dolorum a!
-            </p>
-          </div>
-        </article>
+        <!--========== POPUP-IMAGE ==========-->
+        <div class="popup-image">
+          <span class="exit">&times;</span>
+          <img src="images/5.jpg" alt="" />
+        </div>
       </div>
     </section>
+
+    <section class="banner"></section>
 
     <!--========== CATEGORY BUTTONS ==========-->
 
@@ -321,23 +354,26 @@
       </div>
     </section> -->
 
-
     <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
-        </a>
-
-
-        <small>Already have an account? <a href="signin.html">Sign In</a></small>
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+      document.querySelectorAll(".post__thumbnail img").forEach((image) => {
+        image.onclick = () => {
+        document.querySelector('.popup-image').style.display = "block";
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+      });
+
+      document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';
+      }
+    </script>
+
   </body>
 </html>
-
-
-
-
-
-

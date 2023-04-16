@@ -14,7 +14,7 @@
   </head>
   <body>
     <!--==================== HEADER ====================-->
-        <header class="new_nav">
+        <!-- <header class="new_nav">
         <div class="logo">
             <img src="images/museumlogo.png">
         </div>
@@ -49,11 +49,82 @@
             <div></div>
             <div></div>
         </label>
-    </header>
+    </header> -->
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/museumlogo.png" alt="">
+            </div>
+
+            <span class="logo_name">WEBSEUM</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#" class="active">
+                    <i class="uil uil-pen"></i>
+                    <span class="link-name">Add Post</span>
+                </a></li>
+                <li><a href="dashboard.html">
+                    <i class="uil uil-clipboard-notes"></i>
+                    <span class="link-name">Manage Posts</span>
+                </a></li>
+                <li><a href="add-user.html">
+                    <i class="uil uil-user-plus"></i>
+                    <span class="link-name">Add User</span>
+                </a></li>
+                <li><a href="manage-users.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Manage Users</span>
+                </a></li>
+                <li><a href="add-category.html">
+                    <!-- <i class="uil uil-list-ol-alt"></i> -->
+                    <i class="uil uil-list-ui-alt"></i>
+                    <span class="link-name">Add Category</span>
+                </a></li>
+                <li><a href="manage-categories.html">
+                    <i class="uil uil-subject"></i>
+                    <span class="link-name">Manage Category</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <!-- <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-pen"></i>
+                    <span class="text">Add Post</span>
+                </div>
+            </div>
+        </div>
 
 
-
-    <section class="form__section">
+    <div class="form__section">
             <div class="container form__section-container">
                 <h2>Add Post</h2>
                 <div class="alert__message error">
@@ -100,7 +171,7 @@
                     <button type="submit" class="btn">Add Post</button>
                 </form>
             </div>
-        </section>
+        </div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

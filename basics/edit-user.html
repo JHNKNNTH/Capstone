@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
-    <link rel="stylesheet" href="add-user.css" />
+    <link rel="stylesheet" href="edit-user.css" />
     <!--ICON LINK-->
     <link
       rel="stylesheet"
@@ -14,9 +14,61 @@
     </head>
     <body>
 
-        <section class="form__section">
+      <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/museumlogo.png" alt="">
+            </div>
+
+            <span class="logo_name">WEBSEUM</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="manage-users.html" class="active">
+                    <!-- <i class="uil uil-users-alt"></i> -->
+                    <i class="uil uil-arrow-left"></i>
+                    <span class="link-name">Back</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <!-- <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-edit"></i>
+                    <span class="text">Edit User</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__section">
             <div class="container form__section-container">
-                <h2>Add User</h2>
+                <h2>Edit User</h2>
                 <div class="alert__message error">
                     <p>This is an error message</p>
                 </div>
@@ -28,6 +80,22 @@
                     <div class="inputBox">
                       <input type="text" class="input-field" required="required" />
                       <span>Last Name</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="text" class="input-field" required="required" />
+                      <span>Username</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="email" class="input-field" required="required" />
+                      <span>Email Address</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" class="input-field" required="required" />
+                      <span>Create Password</span>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" class="input-field" required="required" />
+                      <span>Confirm Password</span>
                     </div>
                     <div class="inputBox">
                         <select required="required">
@@ -49,7 +117,10 @@
                     <button type="submit" class="btn">Update User</button>
                 </form>
             </div>
-        </section>
+          </div>
+
+          <script src="js/swiper-bundle.min.js"></script>
+          <script src="js/main.js"></script>
 
     </body>
     </html>

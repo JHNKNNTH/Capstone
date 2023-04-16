@@ -9,41 +9,91 @@
     <!--ICON LINK-->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <!--FONT LINK-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <title>Document</title>
   </head>
   <body>
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+          <img src="images/museumlogo.png" alt="" />
+        </div>
 
-        <section class="form__section">
-            <div class="container form__section-container">
-                <h2>Edit Category</h2>
-                <div class="alert__message error">
-                    <p>This is an error message</p>
+        <span class="logo_name">WEBSEUM</span>
+      </div>
+
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="manage-categories.html" class="active">
+              <i class="uil uil-arrow-left"></i>
+              <span class="link-name">Back</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout-mode">
+          <li>
+            <a href="#">
+              <i class="uil uil-signout"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+
+          <!-- <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
                 </div>
-                <form action="">
-                  <div class="inputBox">
-                    <input type="text" class="input-field" required="required" />
-                    <span>Title</span>
-                  </div>
-                  <div class="inputBox">
-                    <textarea rows="5" required="required"></textarea>
-                    <span>Description</span>
-                  </div>
-                <!-- <form action="">
+            </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+      </div>
+
+      <div class="dash-content">
+        <div class="overview">
+          <div class="title">
+            <i class="uil uil-edit"></i>
+            <span class="text">Edit Category</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__section">
+        <div class="container form__section-container">
+          <h2>Edit Category</h2>
+          <div class="alert__message error">
+            <p>This is an error message</p>
+          </div>
+          <form action="">
+            <div class="inputBox">
+              <input type="text" class="input-field" required="required" />
+              <span>Category Name</span>
+            </div>
+            <div class="inputBox">
+              <textarea rows="5" required="required"></textarea>
+              <span>Description</span>
+            </div>
+            <!-- <form action="">
                     <input type="text" placeholder="Title" required>
                    <textarea rows="4" placeholder="Description"></textarea> -->
-                    <button type="submit" class="btn">Update Category</button>
-                </form>
-            </div>
-        </section>
+            <button type="submit" class="btn">Update Category</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-
-        <script src="main.js"></script>
-
-    </body>
-    </html>
-
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

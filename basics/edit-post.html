@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
-    <link rel="stylesheet" href="add-post.css" />
+    <link rel="stylesheet" href="edit-post.css" />
     <!--ICON LINK-->
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
   </head>
   <body>
     <!--==================== HEADER ====================-->
-        <header class="new_nav">
+        <!-- <header class="new_nav">
         <div class="logo">
             <img src="images/museumlogo.png">
         </div>
@@ -49,11 +49,62 @@
             <div></div>
             <div></div>
         </label>
-    </header>
+    </header> -->
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/museumlogo.png" alt="">
+            </div>
+
+            <span class="logo_name">WEBSEUM</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html" class="active">
+                    <!-- <i class="uil uil-clipboard-notes"></i> -->
+                    <i class="uil uil-arrow-left"></i>
+                    <span class="link-name">Back</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <!-- <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-edit"></i>
+                    <span class="text">Edit Post</span>
+                </div>
+            </div>
+        </div>
 
 
-
-    <section class="form__section">
+    <div class="form__section">
             <div class="container form__section-container">
                 <h2>Edit Post</h2>
                 <div class="alert__message error">
@@ -87,26 +138,28 @@
                     </div>
                     <div class="inputBox">
                     <textarea rows="10" required="required"></textarea>
-                    <span>Body</span>
+                    <span>Description</span>
                     </div>
                     <!-- <div class="form__control inline">
                         <input type="checkbox" id="is_featured" checked>
                         <label for="is_featured">Featured</label>
                     </div> -->
                     <div class="inputBox">
-                        <label for="thumbnail">Change Thumbnail</label>
+                        <label for="thumbnail">Upload Thumbnail</label>
                         <input class="uploadText" type="file" id="thumbnail">
                     </div>
                     <button type="submit" class="btn">Update Post</button>
                 </form>
             </div>
-        </section>
+        </div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>
 </html>
+
+
 
 
 
